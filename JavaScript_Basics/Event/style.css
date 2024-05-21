@@ -1,0 +1,11 @@
+body{
+  background-color: aliceblue;
+}
+
+h1{
+  color: rgb(0, 81, 81);
+}
+p{
+  background-color: rgb(237, 235, 235);
+  padding: 10px;
+}

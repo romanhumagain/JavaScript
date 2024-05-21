@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+
+  
+</body>
+<script>
+  function showPrompt(){
+    let input = prompt("Enter a number.");
+    return input;
+  }
+
+  let value = showPrompt();
+  console.log(value)
+  
+  if (value != ""){
+
+  if (value%5 === 0){
+    alert(value + " Is multiple of 5");
+  }
+  else{
+    alert(value + " Is not a multiple of 5");
+  }
+}
+else{
+  alert("You can't left the field empty !")
+}
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>Hello My name is: <span id="demo"></span> </p>
+
+  <h1>Converting Celcius to fahrenheit</h1>
+  
+  <p><span id="value"></span> <span>F is equal to:</span> <span id="conversion"></span> Celcius</p>
+  
+
+
+  <script>
+    function demo_func(f_name, l_name){
+      return f_name + ' ' + l_name;
+    }
+    const x = demo_func("Roman", "Humagain");
+    document.getElementById('demo').innerHTML=x;
+
+    let value;
+    function getValue(){
+      value = prompt("Please Enter a Value to convert from Fahrenheit to Celsius ")
+    }    
+
+    getValue()
+  // function to convert Fahrenheit to Celsius:
+    function toCelsius(fahrenheit){
+      return (5/9) * (fahrenheit-32);
+    }
+
+    let celciusValue = toCelsius(value)
+
+    document.getElementById('conversion').innerHTML = celciusValue
+    document.getElementById('value').innerHTML = value
+
+
+  </script>
+
+</body>
+</html>

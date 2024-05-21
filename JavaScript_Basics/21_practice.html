@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  <p> Your generated username is : <span id="username"></span> </p>
+</body>
+<script>
+  let username;
+function generateUsername(){
+  let name = prompt("Please enter your name: ");
+  let name_length = name.length
+
+  username = "@"+name+name_length
+}
+
+generateUsername()
+document.getElementById("username").innerHTML=username
+
+
+
+
+</script>
+</html>

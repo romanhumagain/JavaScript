@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning for loop</title>
+</head>
+<body>
+  <h1>Learning Javascript For Loop</h1>
+  <p id="demo"></p>
+
+  <script>
+    const cars = ["Audi", "Farari", "Tesla"];
+    let text = "";
+
+    for(let i = 0; i < cars.length; i++){
+      text += cars[i] + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML=text;
+
+
+  </script>
+</body>
+</html>
